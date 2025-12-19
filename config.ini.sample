@@ -1,0 +1,15 @@
+[deepl]
+; 您的 DeepL API Key。请确保值没有被任何引号包裹。
+api_key = 
+; DeepL 翻译 API 地址 (Free Account)
+translate_url = https://api-free.deepl.com/v2/translate
+; DeepL 用量查询 API 地址 (Free Account)
+usage_url = https://api-free.deepl.com/v2/usage
+
+[settings]
+; 每次 API 调用后的休眠时间（秒），以避免触发限速。
+sleep_time = 0.5
+; 配额阈值。当使用量达到总限额的百分比时，程序将退出 (例如 0.95 = 95%)。
+quota_threshold = 0.95
+; 单次 API 请求的最大字符数限制 (DeepL 限制为 50000)。
+max_batch_chars = 45000
